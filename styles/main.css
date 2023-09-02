@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Dancing+Script:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans:ital@1&family=Permanent+Marker&family=Raleway:ital,wght@0,300;1,600&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab&family=Tilt+Prism&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../images/blob-scene-haikei.png");
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-size: 1.5rem;
+    background-size: cover;
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+}
+
+header img{
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.575);
+    margin: 5px 10px;
+    border-radius: 50px;
+}
+
+header img:hover{
+    background-color: white;
+    scale: 1.2;
+}
+
+main article{
+    width: 70%;
+    margin :150px auto;  
+}
+
+main h1{
+    padding: 30px 0;
+}
+
+main article p{
+    width: 1100px;
+}
+
+main article p a{
+    color: white;
+}
+
+main .links ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: space-around;
+    width: 80%;
+}
+
+main .links ul li{
+    list-style: none;
+}
+
+main .links ul li a{
+    display: inline-block;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.4s;
+    box-shadow: 0px 0px 60px #1f4c65;
+}
+
+main .links ul li a:hover, main .links ul li a:focus{
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+    scale: 1.15;
+}
+
+main .links ul li a:active{
+    color: white;
+    background-color: black;
+}
+
+
+/* very small screens */
+@media (max-width: 767px){
+
+    body{
+        background-image: url("../images/blob-scene-haikei-mobile.png");
+    }
+    
+    main .links ul li a{
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    main article {
+        margin-top: 30px;
+    }
+
+    main article p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+
+/* small screens */
+@media (min-width: 768px) and (max-width: 991px){
+
+    main article p{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    main .links ul li a{
+        text-align: center;
+        display: flex;
+        margin: 50px 0; 
+    }
+
+}
+
+/* medium screens */
+@media (min-width: 992px){
+    main article p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    main .links ul li a{
+        text-align: center;
+        margin: 50px;
+    }
+}
+
+/* large screens */
+@media (min-width: 1200px){
+    main article p{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    main .links ul li a{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+

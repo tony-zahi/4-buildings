@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Dancing+Script:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans:ital@1&family=Permanent+Marker&family=Raleway:ital,wght@0,300;1,600&family=Roboto+Condensed:ital,wght@1,300&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+/* div{
+    background-color: #817e5c;
+    margin: 50px;
+    border-radius: 40px;
+}
+
+div img{
+    float: left;
+    height: 800px;
+    border-radius: 40px 0px 0px 40px;
+    padding-right: 30px;
+}
+
+
+div article{
+    height: 800px;
+    color: #333;
+    padding: 10px;
+    font-size: 2.2rem;    
+}
+
+h1{
+    padding: 30px;
+} */
+
+
+/* very small screens */
+@media (max-width: 767px){
+
+    body div{
+        background-image: url("../../images/Chez\ Lindley.jpg");
+        background-size: cover;
+        width: 100%;
+    }
+
+    body div article{
+        background-color: rgba(0, 0, 0, 0.603);
+        height: 100vh;
+        color: rgb(212, 212, 212);
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    div img{
+        display: none;
+    }
+}
+
+/* small screens */
+@media (min-width: 768px) and (max-width: 991px){
+
+   body div{
+        background-image: url("../../images/Chez\ Lindley.jpg");
+        background-size: cover;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    body div article{
+        background-color: rgba(0, 0, 0, 0.603);
+        height: 100vh;
+        color: rgb(212, 212, 212);
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    div img{
+        display: none;
+    }
+
+}
+
+
+/* medium screens */
+@media (min-width: 992px){
+    
+    div{
+        background-color: #4183e6;
+        margin: 50px;
+        border-radius: 40px;
+    }
+
+    div img{
+        float: left;
+        height: 800px;
+        border-radius: 40px 0px 0px 40px;
+        padding-right: 30px;
+    }
+
+
+    div article{
+        height: 800px;
+        color: #333;
+        padding: 10px;
+        font-size: 1.4rem;    
+    }
+
+    h1{
+        padding: 15px;
+    } 
+}
+
+/* large screens */
+@media (min-width: 1200px){
+    div{
+        background-color: #5f6434;
+        margin: 50px;
+        border-radius: 40px;
+    }
+
+    div img{
+        float: left;
+        height: 800px;
+        border-radius: 40px 0px 0px 40px;
+        padding-right: 30px;
+    }
+
+
+    div article{
+        height: 800px;
+        color: #333;
+        padding: 10px;
+        font-size: 1.9rem;    
+    }
+
+    h1{
+        padding: 30px;
+    } 
+}
+
